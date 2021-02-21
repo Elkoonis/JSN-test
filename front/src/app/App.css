@@ -1,0 +1,49 @@
+
+.App {
+  display: grid;
+  grid-template-areas: 
+    "photo photo photo "
+    "header header header" 
+    "main main main";
+  }  
+
+
+@media all and (max-width: 575px) {
+  .App { 
+    
+    grid-template-areas: 
+      "photo"
+      "header"
+      "main"
+      ;
+      
+    grid-template-rows: 1fr;  
+    grid-template-columns: 1fr;
+ 
+    }
+  }
+
+   main {
+  padding: 1em;
+  }
+
+  footer {
+  padding: 1em;
+  }
+
+
+  #pageHeader {
+     grid-area: header;
+    
+     }
+
+  #pageMain { 
+     grid-area: main;      
+     }
+  
+ 
+
+  #pagePhoto {
+     grid-area: photo;
+     }
+  

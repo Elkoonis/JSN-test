@@ -1,0 +1,49 @@
+.heroCards {
+
+  display: grid;
+  grid-template-areas: "super bat iron" ;
+
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  max-width: 300px;
+  background-color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  margin: 1%;
+}
+.card:hover{
+  background-color: red;
+}
+
+.card p{
+  text-align: center;
+  font-size: 200%;
+  color: aliceblue;
+  border-top: 3px solid #fddb3a;
+}
+
+.card img {
+  max-height:250px;
+}
+
+.card .superman {
+  grid-area: super;
+}
+
+.card .batman {
+  grid-area: bat;
+}
+
+.card .ironman {
+  grid-area: iron;
+}
+
+@media all and (max-width: 575px) {
+  .heroCards {
+    display: grid;
+    grid-template-areas: "super" "bat" "iron" ;
+  }
+}
